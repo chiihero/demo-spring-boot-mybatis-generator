@@ -1,28 +1,20 @@
 package com.chii.demo.pojo;
 
 public class User {
-    private Integer uid;
-
     private String username;
 
     private String passwd;
 
-    public User(Integer uid, String username, String passwd) {
-        this.uid = uid;
+    private String mail;
+
+    public User(String username, String passwd, String mail) {
         this.username = username;
         this.passwd = passwd;
+        this.mail = mail;
     }
 
     public User() {
         super();
-    }
-
-    public Integer getUid() {
-        return uid;
-    }
-
-    public void setUid(Integer uid) {
-        this.uid = uid;
     }
 
     public String getUsername() {
@@ -39,5 +31,13 @@ public class User {
 
     public void setPasswd(String passwd) {
         this.passwd = passwd == null ? null : passwd.trim();
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail == null ? null : mail.trim();
     }
 }

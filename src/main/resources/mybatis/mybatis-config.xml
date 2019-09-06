@@ -27,6 +27,6 @@
         <package name="com.chii.demo.pojo"/>
     </typeAliases>
     <mappers>
-        <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mybatis/mapper/UserMapper.xml"/>
     </mappers>
 </configuration>
